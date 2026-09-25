@@ -1,0 +1,133 @@
+[
+  {
+    "label": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "raw": {
+        "scorad": 27.5,
+        "objetivo": 21.5,
+        "b": 5
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+    "input": {
+      "area": 10,
+      "eritema": "1",
+      "edema": "0",
+      "exsudacao": "0",
+      "escoriacao": "0",
+      "liquen": "0",
+      "xerose": "1",
+      "prurido": 2,
+      "sono": 0
+    },
+    "expected": {
+      "raw": {
+        "scorad": 11
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "area": 10,
+      "eritema": "1",
+      "edema": "0",
+      "exsudacao": "0",
+      "escoriacao": "0",
+      "liquen": "0",
+      "xerose": "1",
+      "prurido": 2,
+      "sono": 0
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+    "input": {
+      "area": 60,
+      "eritema": "2",
+      "edema": "2",
+      "exsudacao": "2",
+      "escoriacao": "2",
+      "liquen": "2",
+      "xerose": "2",
+      "prurido": 8,
+      "sono": 7
+    },
+    "expected": {
+      "raw": {
+        "scorad": 69,
+        "objetivo": 54
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "area": 60,
+      "eritema": "2",
+      "edema": "2",
+      "exsudacao": "2",
+      "escoriacao": "2",
+      "liquen": "2",
+      "xerose": "2",
+      "prurido": 8,
+      "sono": 7
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+    "input": {
+      "area": 25,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "0",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "raw": {
+        "scorad": 25
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "area": 25,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "0",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expandedZeroOptions": []
+  }
+]

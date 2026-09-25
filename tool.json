@@ -1,0 +1,290 @@
+{
+  "tool": {
+    "id": "scorad",
+    "title": "SCORAD",
+    "short": "Gravidade da dermatite atópica",
+    "desc": "Calcule o SCORAD da dermatite atópica (extensão, intensidade, prurido e sono) e o SCORAD objetivo, com a classificação em leve, moderada ou grave.",
+    "lead": "Mede a gravidade da dermatite atópica combinando extensão, intensidade das lesões e sintomas subjetivos (prurido e perda de sono). Criado pela European Task Force on Atopic Dermatitis.",
+    "spec": [
+      "dermatologia",
+      "alergia-e-imunologia",
+      "pediatria"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "area",
+        "Extensão (A): superfície acometida pela regra dos nove",
+        "num",
+        {
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "ph": "20"
+        }
+      ],
+      [
+        "eritema",
+        "Eritema",
+        "radio",
+        {
+          "opts": {
+            "0": "0 ausente",
+            "1": "1 leve",
+            "2": "2 moderado",
+            "3": "3 intenso"
+          }
+        }
+      ],
+      [
+        "edema",
+        "Edema/papulação",
+        "radio",
+        {
+          "opts": {
+            "0": "0 ausente",
+            "1": "1 leve",
+            "2": "2 moderado",
+            "3": "3 intenso"
+          }
+        }
+      ],
+      [
+        "exsudacao",
+        "Exsudação/crostas",
+        "radio",
+        {
+          "opts": {
+            "0": "0 ausente",
+            "1": "1 leve",
+            "2": "2 moderado",
+            "3": "3 intenso"
+          }
+        }
+      ],
+      [
+        "escoriacao",
+        "Escoriação",
+        "radio",
+        {
+          "opts": {
+            "0": "0 ausente",
+            "1": "1 leve",
+            "2": "2 moderado",
+            "3": "3 intenso"
+          }
+        }
+      ],
+      [
+        "liquen",
+        "Liquenificação",
+        "radio",
+        {
+          "opts": {
+            "0": "0 ausente",
+            "1": "1 leve",
+            "2": "2 moderado",
+            "3": "3 intenso"
+          }
+        }
+      ],
+      [
+        "xerose",
+        "Xerose (em pele não lesionada)",
+        "radio",
+        {
+          "opts": {
+            "0": "0 ausente",
+            "1": "1 leve",
+            "2": "2 moderado",
+            "3": "3 intenso"
+          }
+        }
+      ],
+      [
+        "prurido",
+        "Prurido nos últimos 3 dias (0 a 10)",
+        "num",
+        {
+          "min": 0,
+          "max": 10,
+          "step": 0.5,
+          "ph": "5"
+        }
+      ],
+      [
+        "sono",
+        "Perda de sono nos últimos 3 dias (0 a 10)",
+        "num",
+        {
+          "min": 0,
+          "max": 10,
+          "step": 0.5,
+          "ph": "3"
+        }
+      ]
+    ],
+    "formula": "<p><strong>SCORAD</strong> = A/5 + 7B/2 + C, em que A = extensão (0 a 100%), B = soma das 6 intensidades (0 a 18), C = prurido + perda de sono (0 a 20). Máximo: 103.</p><p><strong>SCORAD objetivo</strong> = A/5 + 7B/2 (máximo 83).</p>",
+    "table": [
+      [
+        "Gravidade",
+        "SCORAD",
+        "SCORAD objetivo"
+      ],
+      [
+        "Leve",
+        "&lt; 25",
+        "&lt; 15"
+      ],
+      [
+        "Moderada",
+        "25 a 50",
+        "15 a 40"
+      ],
+      [
+        "Grave",
+        "&gt; 50",
+        "&gt; 40"
+      ]
+    ],
+    "tips": [
+      "A intensidade é avaliada em uma <strong>lesão representativa</strong> (média), não na pior; a xerose, em pele sem lesão.",
+      "Na extensão, conte só pele com inflamação; xerose isolada não entra em A.",
+      "Em crianças menores de 2 anos, a regra dos nove muda (cabeça maior): ajuste a estimativa da extensão.",
+      "Prurido e sono são referidos pelo paciente ou cuidador sobre os últimos 3 dias; em comparações de tratamento, o SCORAD objetivo é mais reprodutível.",
+      "Compare com o EASI, a medida de sinais preferida em ensaios clínicos (iniciativa HOME)."
+    ],
+    "sources": [
+      [
+        "European Task Force on Atopic Dermatitis. Severity scoring of atopic dermatitis: the SCORAD index. Dermatology, 1993.",
+        "https://doi.org/10.1159/000247298"
+      ],
+      [
+        "Kunz B et al. Clinical validation and guidelines for the SCORAD index: consensus report of the European Task Force on Atopic Dermatitis. Dermatology, 1997.",
+        "https://doi.org/10.1159/000245677"
+      ],
+      [
+        "Oranje AP et al. Practical issues on interpretation of scoring atopic dermatitis: the SCORAD index, objective SCORAD and the three-item severity score. Br J Dermatol, 2007.",
+        "https://doi.org/10.1111/j.1365-2133.2007.08112.x"
+      ]
+    ],
+    "cases": [
+      [
+        "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        {
+          "area": 20,
+          "eritema": "1",
+          "edema": "1",
+          "exsudacao": "0",
+          "escoriacao": "1",
+          "liquen": "1",
+          "xerose": "1",
+          "prurido": 4,
+          "sono": 2
+        },
+        {
+          "raw": {
+            "scorad": 27.5,
+            "objetivo": 21.5,
+            "b": 5
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        {
+          "area": 10,
+          "eritema": "1",
+          "edema": "0",
+          "exsudacao": "0",
+          "escoriacao": "0",
+          "liquen": "0",
+          "xerose": "1",
+          "prurido": 2,
+          "sono": 0
+        },
+        {
+          "raw": {
+            "scorad": 11
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        {
+          "area": 60,
+          "eritema": "2",
+          "edema": "2",
+          "exsudacao": "2",
+          "escoriacao": "2",
+          "liquen": "2",
+          "xerose": "2",
+          "prurido": 8,
+          "sono": 7
+        },
+        {
+          "raw": {
+            "scorad": 69,
+            "objetivo": 54
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        {
+          "area": 25,
+          "eritema": "1",
+          "edema": "1",
+          "exsudacao": "0",
+          "escoriacao": "1",
+          "liquen": "0",
+          "xerose": "1",
+          "prurido": 4,
+          "sono": 2
+        },
+        {
+          "raw": {
+            "scorad": 25
+          },
+          "level": "mid"
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}
