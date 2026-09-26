@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-scorad · Elucenia · https://github.com/Elucenia/tool-scorad
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"scorad","title":"SCORAD","fields":[["area","Extensão (A): superfície acometida pela regra dos nove","num",{"min":0,"max":100,"step":1,"unit":"%","ph":"20"}],["eritema","Eritema","radio",{"opts":{"0":"0 ausente","1":"1 leve","2":"2 moderado","3":"3 intenso"}}],["edema","Edema/papulação","radio",{"opts":{"0":"0 ausente","1":"1 leve","2":"2 moderado","3":"3 intenso"}}],["exsudacao","Exsudação/crostas","radio",{"opts":{"0":"0 ausente","1":"1 leve","2":"2 moderado","3":"3 intenso"}}],["escoriacao","Escoriação","radio",{"opts":{"0":"0 ausente","1":"1 leve","2":"2 moderado","3":"3 intenso"}}],["liquen","Liquenificação","radio",{"opts":{"0":"0 ausente","1":"1 leve","2":"2 moderado","3":"3 intenso"}}],["xerose","Xerose (em pele não lesionada)","radio",{"opts":{"0":"0 ausente","1":"1 leve","2":"2 moderado","3":"3 intenso"}}],["prurido","Prurido nos últimos 3 dias (0 a 10)","num",{"min":0,"max":10,"step":0.5,"ph":"5"}],["sono","Perda de sono nos últimos 3 dias (0 a 10)","num",{"min":0,"max":10,"step":0.5,"ph":"3"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
