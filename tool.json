@@ -5,12 +5,12 @@
     "short": "Gravidade da dermatite atópica",
     "desc": "Calcule o SCORAD da dermatite atópica (extensão, intensidade, prurido e sono) e o SCORAD objetivo, com a classificação em leve, moderada ou grave.",
     "lead": "Mede a gravidade da dermatite atópica combinando extensão, intensidade das lesões e sintomas subjetivos (prurido e perda de sono). Criado pela European Task Force on Atopic Dermatitis.",
+    "kind": "Calculadora",
     "spec": [
       "dermatologia",
       "alergia-e-imunologia",
       "pediatria"
     ],
-    "tier": 1,
     "fields": [
       [
         "area",
@@ -126,35 +126,6 @@
       ]
     ],
     "formula": "<p><strong>SCORAD</strong> = A/5 + 7B/2 + C, em que A = extensão (0 a 100%), B = soma das 6 intensidades (0 a 18), C = prurido + perda de sono (0 a 20). Máximo: 103.</p><p><strong>SCORAD objetivo</strong> = A/5 + 7B/2 (máximo 83).</p>",
-    "table": [
-      [
-        "Gravidade",
-        "SCORAD",
-        "SCORAD objetivo"
-      ],
-      [
-        "Leve",
-        "&lt; 25",
-        "&lt; 15"
-      ],
-      [
-        "Moderada",
-        "25 a 50",
-        "15 a 40"
-      ],
-      [
-        "Grave",
-        "&gt; 50",
-        "&gt; 40"
-      ]
-    ],
-    "tips": [
-      "A intensidade é avaliada em uma <strong>lesão representativa</strong> (média), não na pior; a xerose, em pele sem lesão.",
-      "Na extensão, conte só pele com inflamação; xerose isolada não entra em A.",
-      "Em crianças menores de 2 anos, a regra dos nove muda (cabeça maior): ajuste a estimativa da extensão.",
-      "Prurido e sono são referidos pelo paciente ou cuidador sobre os últimos 3 dias; em comparações de tratamento, o SCORAD objetivo é mais reprodutível.",
-      "Compare com o EASI, a medida de sinais preferida em ensaios clínicos (iniciativa HOME)."
-    ],
     "sources": [
       [
         "European Task Force on Atopic Dermatitis. Severity scoring of atopic dermatitis: the SCORAD index. Dermatology, 1993.",
@@ -254,9 +225,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -265,17 +233,529 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:08:25.238Z",
+      "total": 4749,
+      "passed": 4749,
+      "sourceRowCount": 4749,
+      "uniqueApiInputCount": 4749,
+      "sourceContextCount": 4749,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "459fdd18099ade42904de4bd1a4838a2319eb4180bb2f4b4b718c0bbe69d12a6",
+        "total": 4749,
+        "bankRowCount": 4749,
+        "uniqueApiInputCount": 4749,
+        "sourceContextCount": 4749,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/scorad-independent-expectations-final27-r2.json",
+            "sha256": "4b52b6dc5cddf54cde1ca046594f9806eff1de2c9a141ba73d3291167a8c6333"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/scorad-source-comparison-final27-r2.json",
+          "sha256": "a846e497b86d9c594571d11fbb05f62908206a17171e943c9e3663fc19555a81"
+        },
+        "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 4749,
+        "uniqueApiInputs": 4749,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/scorad-independent-expectations-final27-r2.json",
+          "sha256": "4b52b6dc5cddf54cde1ca046594f9806eff1de2c9a141ba73d3291167a8c6333"
+        }
+      },
+      "scope": "Exact selected A/5+7B/2+C total and algebraic omission of C. The omission is not a separately approved objective-SCORAD edition. A inflammatory-area assessment, dryness on unaffected skin, preceding3days/nights, VAS drawing0/text1 conflict and clinical severity remain outside approval.",
+      "sources": [
+        {
+          "id": "scorad",
+          "declaredEdition": "SCORAD/ETFAD 1993:extensão/5+3,5 intensidade+sintomas; objective SCORADsem C; limiares Oranje 2007",
+          "readRecords": [
+            {
+              "id": "scorad",
+              "edition": "Undated Société Française de Dermatologie official SCORAD form, referencing ETFAD1993; not original1993 full-paper bytes",
+              "url": "https://www.sfdermato.org/media/pdf/recommandation/scorad-3b22aebdbbf650c338531006542f5838.pdf",
+              "file": "scorad-sfd-official-form-final27.pdf",
+              "sha256": "1d08c7168a358a0e6c4f011a1d24f857924a406a5e8f285b57f32f3b9dada967",
+              "readPages": [
+                1
+              ],
+              "visualEvidence": {
+                "file": "scorad-sfd-official-form-final27-p1.png",
+                "sha256": "d3a419d0d2167dc84f2d07395239d72c8d6183a1bed366b741d338da08ec9d82"
+              },
+              "observations": "The official one-page form explicitly prints A/5+7B/2+C. B is the sum of six0–3 signs: erythema, edema/papulation, oozing/crust, excoriation, lichenification and dryness (evaluated on nonlesional skin). C combines pruritus and sleep loss over the previous3days/nights. The drawn VAS is anchored0–10 despite its neighboring parenthesis1–10; that printed discrepancy is preserved. Extent uses inflammatory lesions, excluding dry skin. Pediatric body-map quantities are not implemented or tested by entering a preassigned area percentage.",
+              "notVerified": [
+                "Original1993 full article not obtained in this reading; PubMed identity/abstract inspected only.",
+                "No body-area observation, severity-category cutoff, treatment response, psychometric, clinical or professional translation approval.",
+                "The objective numeric output is checked only as algebraic omission of C, not a claim to validate a distinct objective-SCORAD edition or supplementary points.",
+                "Fractional-area mixed arithmetic outside the selected test set remains untested.",
+                "Rights approval remains not-performed."
+              ],
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "sourceRightsApproval": "not-performed"
+            }
+          ],
+          "sourceReview": {
+            "file": "reports/review-20261003/scorad-primary-review-final27.json",
+            "sha256": "17e429df59954b4521f15e5afe6a59d1f659ceb335ff89c90f7cfcded6670723"
+          },
+          "sourceComponent": "Exact selected A/5+7B/2+C total and algebraic omission of C. The omission is not a separately approved objective-SCORAD edition. A inflammatory-area assessment, dryness on unaffected skin, preceding3days/nights, VAS drawing0/text1 conflict and clinical severity remain outside approval."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/scorad-source-comparison-final27-r2.json",
+      "evidenceSha256": "a846e497b86d9c594571d11fbb05f62908206a17171e943c9e3663fc19555a81",
+      "independentPeer": {
+        "status": "passed",
+        "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+        "peer": {
+          "file": "reports/review-20261003/scorad-own-fraction-independent-review-western-final27.json",
+          "sha256": "708ddd173835a37bc88e4aee9cb11068fed90289687e395562df85b096616b8e"
+        },
+        "peerScope": "Independent reading of official SFD SCORAD one-page form and own Python Fraction algebra frozen before engine imports/root expected values; root-selected inputs reused, three Node/same-source browser-compatible VM adapters. Exact selected numeric sums only; no assessment, category, treatment, objective-SCORAD edition or full-method certification.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+          "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 14247,
+      "actualVmExecutions": 14247,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/scorad/calculator.js",
+          "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/scorad/calculator.js",
+          "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/scorad/calculator.js",
+          "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+        }
+      ],
+      "qualifications": [
+        "Exact selected A/5+7B/2+C total and algebraic omission of C. The omission is not a separately approved objective-SCORAD edition. A inflammatory-area assessment, dryness on unaffected skin, preceding3days/nights, VAS drawing0/text1 conflict and clinical severity remain outside approval.",
+        "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+        "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/scorad/calculator.js",
+          "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/scorad/calculator.js",
+          "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/scorad/calculator.js",
+          "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "SCORAD/ETFAD 1993:extensão/5+3,5 intensidade+sintomas; objective SCORADsem C; limiares Oranje 2007",
+    "implementationVersion": "scorad@native-2026-10-03+0f7d89484000",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/8435513/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "SCORAD = A/5 + 7B/2 + C, em que A = extensão (0 a 100%), B = soma das 6 intensidades (0 a 18), C = prurido + perda de sono (0 a 20). Máximo: 103. SCORAD objetivo = A/5 + 7B/2 (máximo 83).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "area",
+            "label": "Extensão (A): superfície acometida pela regra dos nove",
+            "type": "num",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "eritema",
+            "label": "Eritema",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0 ausente",
+              "1": "1 leve",
+              "2": "2 moderado",
+              "3": "3 intenso"
+            }
+          },
+          {
+            "key": "edema",
+            "label": "Edema/papulação",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0 ausente",
+              "1": "1 leve",
+              "2": "2 moderado",
+              "3": "3 intenso"
+            }
+          },
+          {
+            "key": "exsudacao",
+            "label": "Exsudação/crostas",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0 ausente",
+              "1": "1 leve",
+              "2": "2 moderado",
+              "3": "3 intenso"
+            }
+          },
+          {
+            "key": "escoriacao",
+            "label": "Escoriação",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0 ausente",
+              "1": "1 leve",
+              "2": "2 moderado",
+              "3": "3 intenso"
+            }
+          },
+          {
+            "key": "liquen",
+            "label": "Liquenificação",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0 ausente",
+              "1": "1 leve",
+              "2": "2 moderado",
+              "3": "3 intenso"
+            }
+          },
+          {
+            "key": "xerose",
+            "label": "Xerose (em pele não lesionada)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0 ausente",
+              "1": "1 leve",
+              "2": "2 moderado",
+              "3": "3 intenso"
+            }
+          },
+          {
+            "key": "prurido",
+            "label": "Prurido nos últimos 3 dias (0 a 10)",
+            "type": "num",
+            "min": 0,
+            "max": 10,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sono",
+            "label": "Perda de sono nos últimos 3 dias (0 a 10)",
+            "type": "num",
+            "min": 0,
+            "max": 10,
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "aa73c2559fbbf75457242b4e10f0e6cf9de09b65ab6a9a7dd2e85f08f0a97850"
+      },
+      "sourceEditions": [
+        {
+          "citation": "European Task Force on Atopic Dermatitis. Severity scoring of atopic dermatitis: the SCORAD index. Dermatology, 1993.",
+          "url": "https://doi.org/10.1159/000247298",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Severity scoring of atopic dermatitis: the SCORAD index. Consensus Report of the European Task Force on Atopic Dermatitis.",
+            "year": "1993",
+            "firstPublicationDate": "1993-01-01",
+            "doi": "10.1159/000247298",
+            "pmid": "8435513",
+            "journal": "Dermatology (Basel, Switzerland)",
+            "authors": ""
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/8435513/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "1001b1ec7867c2de8140bcf63551bc80936cff98c27f178e9134c7340f625b4c",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Kunz B et al. Clinical validation and guidelines for the SCORAD index: consensus report of the European Task Force on Atopic Dermatitis. Dermatology, 1997.",
+          "url": "https://doi.org/10.1159/000245677",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Clinical validation and guidelines for the SCORAD index: consensus report of the European Task Force on Atopic Dermatitis.",
+            "year": "1997",
+            "firstPublicationDate": "1997-01-01",
+            "doi": "10.1159/000245677",
+            "pmid": "9267730",
+            "journal": "Dermatology (Basel, Switzerland)",
+            "authors": "Kunz B, Oranje AP, Labrèze L, Stalder JF, Ring J, Taïeb A."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/9267730/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "0670098ecbde3976da8e40adda79c40526ed588e89385dfa46dbf28f562284f8",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Oranje AP et al. Practical issues on interpretation of scoring atopic dermatitis: the SCORAD index, objective SCORAD and the three-item severity score. Br J Dermatol, 2007.",
+          "url": "https://doi.org/10.1111/j.1365-2133.2007.08112.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Practical issues on interpretation of scoring atopic dermatitis: the SCORAD index, objective SCORAD and the three-item severity score.",
+            "year": "2007",
+            "firstPublicationDate": "2007-08-21",
+            "doi": "10.1111/j.1365-2133.2007.08112.x",
+            "pmid": "17714568",
+            "journal": "The British journal of dermatology",
+            "authors": "Oranje AP, Glazenburg EJ, Wolkerstorfer A, de Waard-van der Spek FB."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/17714568/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "735e12ad9c50c5971b06cf86daba933bfb61ea0e515b87e206af3e39c62d27ff",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:08:25.238Z",
+        "total": 4749,
+        "passed": 4749,
+        "sourceRowCount": 4749,
+        "uniqueApiInputCount": 4749,
+        "sourceContextCount": 4749,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "459fdd18099ade42904de4bd1a4838a2319eb4180bb2f4b4b718c0bbe69d12a6",
+          "total": 4749,
+          "bankRowCount": 4749,
+          "uniqueApiInputCount": 4749,
+          "sourceContextCount": 4749,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/scorad-independent-expectations-final27-r2.json",
+              "sha256": "4b52b6dc5cddf54cde1ca046594f9806eff1de2c9a141ba73d3291167a8c6333"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/scorad-source-comparison-final27-r2.json",
+            "sha256": "a846e497b86d9c594571d11fbb05f62908206a17171e943c9e3663fc19555a81"
+          },
+          "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 4749,
+          "uniqueApiInputs": 4749,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/scorad-independent-expectations-final27-r2.json",
+            "sha256": "4b52b6dc5cddf54cde1ca046594f9806eff1de2c9a141ba73d3291167a8c6333"
+          }
+        },
+        "scope": "Exact selected A/5+7B/2+C total and algebraic omission of C. The omission is not a separately approved objective-SCORAD edition. A inflammatory-area assessment, dryness on unaffected skin, preceding3days/nights, VAS drawing0/text1 conflict and clinical severity remain outside approval.",
+        "sources": [
+          {
+            "id": "scorad",
+            "declaredEdition": "SCORAD/ETFAD 1993:extensão/5+3,5 intensidade+sintomas; objective SCORADsem C; limiares Oranje 2007",
+            "readRecords": [
+              {
+                "id": "scorad",
+                "edition": "Undated Société Française de Dermatologie official SCORAD form, referencing ETFAD1993; not original1993 full-paper bytes",
+                "url": "https://www.sfdermato.org/media/pdf/recommandation/scorad-3b22aebdbbf650c338531006542f5838.pdf",
+                "file": "scorad-sfd-official-form-final27.pdf",
+                "sha256": "1d08c7168a358a0e6c4f011a1d24f857924a406a5e8f285b57f32f3b9dada967",
+                "readPages": [
+                  1
+                ],
+                "visualEvidence": {
+                  "file": "scorad-sfd-official-form-final27-p1.png",
+                  "sha256": "d3a419d0d2167dc84f2d07395239d72c8d6183a1bed366b741d338da08ec9d82"
+                },
+                "observations": "The official one-page form explicitly prints A/5+7B/2+C. B is the sum of six0–3 signs: erythema, edema/papulation, oozing/crust, excoriation, lichenification and dryness (evaluated on nonlesional skin). C combines pruritus and sleep loss over the previous3days/nights. The drawn VAS is anchored0–10 despite its neighboring parenthesis1–10; that printed discrepancy is preserved. Extent uses inflammatory lesions, excluding dry skin. Pediatric body-map quantities are not implemented or tested by entering a preassigned area percentage.",
+                "notVerified": [
+                  "Original1993 full article not obtained in this reading; PubMed identity/abstract inspected only.",
+                  "No body-area observation, severity-category cutoff, treatment response, psychometric, clinical or professional translation approval.",
+                  "The objective numeric output is checked only as algebraic omission of C, not a claim to validate a distinct objective-SCORAD edition or supplementary points.",
+                  "Fractional-area mixed arithmetic outside the selected test set remains untested.",
+                  "Rights approval remains not-performed."
+                ],
+                "clinicalApproval": "not-performed",
+                "professionalLanguageApproval": "not-performed",
+                "sourceRightsApproval": "not-performed"
+              }
+            ],
+            "sourceReview": {
+              "file": "reports/review-20261003/scorad-primary-review-final27.json",
+              "sha256": "17e429df59954b4521f15e5afe6a59d1f659ceb335ff89c90f7cfcded6670723"
+            },
+            "sourceComponent": "Exact selected A/5+7B/2+C total and algebraic omission of C. The omission is not a separately approved objective-SCORAD edition. A inflammatory-area assessment, dryness on unaffected skin, preceding3days/nights, VAS drawing0/text1 conflict and clinical severity remain outside approval."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/scorad-source-comparison-final27-r2.json",
+        "evidenceSha256": "a846e497b86d9c594571d11fbb05f62908206a17171e943c9e3663fc19555a81",
+        "independentPeer": {
+          "status": "passed",
+          "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+          "peer": {
+            "file": "reports/review-20261003/scorad-own-fraction-independent-review-western-final27.json",
+            "sha256": "708ddd173835a37bc88e4aee9cb11068fed90289687e395562df85b096616b8e"
+          },
+          "peerScope": "Independent reading of official SFD SCORAD one-page form and own Python Fraction algebra frozen before engine imports/root expected values; root-selected inputs reused, three Node/same-source browser-compatible VM adapters. Exact selected numeric sums only; no assessment, category, treatment, objective-SCORAD edition or full-method certification.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+            "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 14247,
+        "actualVmExecutions": 14247,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/scorad/calculator.js",
+            "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/scorad/calculator.js",
+            "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/scorad/calculator.js",
+            "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+          }
+        ],
+        "qualifications": [
+          "Exact selected A/5+7B/2+C total and algebraic omission of C. The omission is not a separately approved objective-SCORAD edition. A inflammatory-area assessment, dryness on unaffected skin, preceding3days/nights, VAS drawing0/text1 conflict and clinical severity remain outside approval.",
+          "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+          "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/scorad/calculator.js",
+            "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/scorad/calculator.js",
+            "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/scorad/calculator.js",
+            "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+    },
+    "limits": "SCORAD mede gravidade de dermatite atópica e depende da avaliação dos sinais, extensão e sintomas subjetivos. O desenvolvimento original incluiu avaliadores treinados e não estabelece diagnóstico da doença pelo total. SCORAD objetivo, índice completo e cortes posteriores exigem suas próprias definições e fontes.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.133Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Cortes Oranje 2007 e validação Kunz 1997 não lidos neste lote; fórmula e regras por idade não estão no resumo."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/scorad/calculator.js",
+    "bytes": 5794,
+    "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "3d3175f551ab29e8ed93080bad39ab4395b47f1dccb581288636268e6231c611",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "6aa610e312067aab79a586bcd9a428cb868062c0b405f5d6660ace1c47fad568",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "6aa610e312067aab79a586bcd9a428cb868062c0b405f5d6660ace1c47fad568",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,0 +1,941 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field area",
+    "input": {
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "area"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field area",
+    "input": {
+      "area": "",
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "area"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" area",
+    "input": {
+      "area": "NaN",
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "area"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" area",
+    "input": {
+      "area": "Infinity",
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "area"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" area",
+    "input": {
+      "area": "1e309",
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "area"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" area",
+    "input": {
+      "area": "invalid",
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "area"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} area",
+    "input": {
+      "area": {},
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "area"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true area",
+    "input": {
+      "area": true,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "area"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum area",
+    "input": {
+      "area": -1,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "area"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum area",
+    "input": {
+      "area": 110,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "area"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field eritema",
+    "input": {
+      "area": 20,
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "eritema"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field eritema",
+    "input": {
+      "area": 20,
+      "eritema": "",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "eritema"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option eritema",
+    "input": {
+      "area": 20,
+      "eritema": "__ELUCENIA_INVALID_OPTION__",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "eritema"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field edema",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "edema"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field edema",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "edema"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option edema",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "__ELUCENIA_INVALID_OPTION__",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "edema"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field exsudacao",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "exsudacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field exsudacao",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "exsudacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option exsudacao",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "__ELUCENIA_INVALID_OPTION__",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "exsudacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field escoriacao",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "escoriacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field escoriacao",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "escoriacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option escoriacao",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "__ELUCENIA_INVALID_OPTION__",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "escoriacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field liquen",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "liquen"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field liquen",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "liquen"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option liquen",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "__ELUCENIA_INVALID_OPTION__",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "liquen"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field xerose",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "xerose"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field xerose",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "xerose"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option xerose",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "__ELUCENIA_INVALID_OPTION__",
+      "prurido": 4,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "xerose"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field prurido",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "prurido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field prurido",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": "",
+      "sono": 2
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "prurido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" prurido",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": "NaN",
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "prurido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" prurido",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": "Infinity",
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "prurido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" prurido",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": "1e309",
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "prurido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" prurido",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": "invalid",
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "prurido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} prurido",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": {},
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "prurido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true prurido",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": true,
+      "sono": 2
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "prurido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum prurido",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": -1,
+      "sono": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "prurido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum prurido",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 11,
+      "sono": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "prurido"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field sono",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sono"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field sono",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sono"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" sono",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sono"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" sono",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sono"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" sono",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sono"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" sono",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sono"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} sono",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sono"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true sono",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sono"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum sono",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "sono"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum sono",
+    "input": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 11
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "sono"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

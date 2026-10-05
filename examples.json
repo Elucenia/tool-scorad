@@ -1,6 +1,20 @@
 [
   {
-    "label": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+    "id": "scorad",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+    "originalInput": {
+      "area": 20,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "1",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
     "input": {
       "area": 20,
       "eritema": "1",
@@ -20,21 +34,43 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "area": 20,
-      "eritema": "1",
-      "edema": "1",
-      "exsudacao": "0",
-      "escoriacao": "1",
-      "liquen": "1",
-      "xerose": "1",
-      "prurido": 4,
-      "sono": 2
+    "recordedResult": {
+      "main": [
+        "27,5",
+        "de 103"
+      ],
+      "label": "SCORAD",
+      "raw": {
+        "scorad": 27.5,
+        "objetivo": 21.5,
+        "b": 5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+    "id": "scorad",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+    "originalInput": {
+      "area": 10,
+      "eritema": "1",
+      "edema": "0",
+      "exsudacao": "0",
+      "escoriacao": "0",
+      "liquen": "0",
+      "xerose": "1",
+      "prurido": 2,
+      "sono": 0
+    },
     "input": {
       "area": 10,
       "eritema": "1",
@@ -52,21 +88,43 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "area": 10,
-      "eritema": "1",
-      "edema": "0",
-      "exsudacao": "0",
-      "escoriacao": "0",
-      "liquen": "0",
-      "xerose": "1",
-      "prurido": 2,
-      "sono": 0
+    "recordedResult": {
+      "main": [
+        "11,0",
+        "de 103"
+      ],
+      "label": "SCORAD",
+      "raw": {
+        "scorad": 11,
+        "objetivo": 9,
+        "b": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+    "id": "scorad",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+    "originalInput": {
+      "area": 60,
+      "eritema": "2",
+      "edema": "2",
+      "exsudacao": "2",
+      "escoriacao": "2",
+      "liquen": "2",
+      "xerose": "2",
+      "prurido": 8,
+      "sono": 7
+    },
     "input": {
       "area": 60,
       "eritema": "2",
@@ -85,21 +143,43 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "area": 60,
-      "eritema": "2",
-      "edema": "2",
-      "exsudacao": "2",
-      "escoriacao": "2",
-      "liquen": "2",
-      "xerose": "2",
-      "prurido": 8,
-      "sono": 7
+    "recordedResult": {
+      "main": [
+        "69,0",
+        "de 103"
+      ],
+      "label": "SCORAD",
+      "raw": {
+        "scorad": 69,
+        "objetivo": 54,
+        "b": 12
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+    "id": "scorad",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+    "originalInput": {
+      "area": 25,
+      "eritema": "1",
+      "edema": "1",
+      "exsudacao": "0",
+      "escoriacao": "1",
+      "liquen": "0",
+      "xerose": "1",
+      "prurido": 4,
+      "sono": 2
+    },
     "input": {
       "area": 25,
       "eritema": "1",
@@ -117,17 +197,25 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "area": 25,
-      "eritema": "1",
-      "edema": "1",
-      "exsudacao": "0",
-      "escoriacao": "1",
-      "liquen": "0",
-      "xerose": "1",
-      "prurido": 4,
-      "sono": 2
+    "recordedResult": {
+      "main": [
+        "25,0",
+        "de 103"
+      ],
+      "label": "SCORAD",
+      "raw": {
+        "scorad": 25,
+        "objetivo": 19,
+        "b": 4
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
