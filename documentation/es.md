@@ -129,3 +129,55 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Dermatitis atópica moderada (SCORAD 25 a 50)
+
+| Detalles del resultado | |
+| --- | --- |
+| SCORAD objetivo (sin síntomas) | 21,5 (moderada) |
+| Extensión (A/5) | 4,0 |
+| Intensidad (7B/2) | 17,5 |
+| Síntomas (C) | 6,0 |
+
+
+### 2
+
+Dermatitis atópica leve (SCORAD < 25)
+
+| Detalles del resultado | |
+| --- | --- |
+| SCORAD objetivo (sin síntomas) | 9,0 (leve) |
+| Extensión (A/5) | 2,0 |
+| Intensidad (7B/2) | 7,0 |
+| Síntomas (C) | 2,0 |
+
+
+### 3
+
+Dermatitis atópica grave (SCORAD > 50)
+
+| Detalles del resultado | |
+| --- | --- |
+| SCORAD objetivo (sin síntomas) | 54,0 (grave) |
+| Extensión (A/5) | 12,0 |
+| Intensidad (7B/2) | 42,0 |
+| Síntomas (C) | 15,0 |
+
+
+### 4
+
+Dermatitis atópica moderada (SCORAD 25 a 50)
+
+| Detalles del resultado | |
+| --- | --- |
+| SCORAD objetivo (sin síntomas) | 19,0 (moderada) |
+| Extensión (A/5) | 5,0 |
+| Intensidad (7B/2) | 14,0 |
+| Síntomas (C) | 6,0 |
+

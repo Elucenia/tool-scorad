@@ -129,3 +129,55 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Mittelgradige atopische Dermatitis (SCORAD 25 bis 50)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Objektiver SCORAD (ohne Symptome) | 21,5 (mäßig) |
+| Ausdehnung (A/5) | 4,0 |
+| Intensität (7B/2) | 17,5 |
+| Symptome (C) | 6,0 |
+
+
+### 2
+
+Leichte atopische Dermatitis (SCORAD < 25)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Objektiver SCORAD (ohne Symptome) | 9,0 (leicht) |
+| Ausdehnung (A/5) | 2,0 |
+| Intensität (7B/2) | 7,0 |
+| Symptome (C) | 2,0 |
+
+
+### 3
+
+Schwere atopische Dermatitis (SCORAD > 50)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Objektiver SCORAD (ohne Symptome) | 54,0 (schwer) |
+| Ausdehnung (A/5) | 12,0 |
+| Intensität (7B/2) | 42,0 |
+| Symptome (C) | 15,0 |
+
+
+### 4
+
+Mittelgradige atopische Dermatitis (SCORAD 25 bis 50)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Objektiver SCORAD (ohne Symptome) | 19,0 (mäßig) |
+| Ausdehnung (A/5) | 5,0 |
+| Intensität (7B/2) | 14,0 |
+| Symptome (C) | 6,0 |
+

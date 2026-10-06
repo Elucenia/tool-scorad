@@ -1,0 +1,3059 @@
+{
+  "id": "scorad",
+  "implementationVersion": "scorad@native-2026-10-05+102b2ba5ebc2",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objetivo (sem sintomas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "21,5 (moderada)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extensão (A/5)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensidade (7B/2)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "17,5",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sintomas (C)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atópica moderada (SCORAD 25 a 50)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objetivo (sem sintomas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "9,0 (leve)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extensão (A/5)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensidade (7B/2)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "7,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sintomas (C)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atópica leve (SCORAD < 25)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objetivo (sem sintomas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "54,0 (grave)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extensão (A/5)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "12,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensidade (7B/2)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "42,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sintomas (C)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "15,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atópica grave (SCORAD > 50)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objetivo (sem sintomas)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "19,0 (moderada)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extensão (A/5)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensidade (7B/2)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "14,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sintomas (C)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6,0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atópica moderada (SCORAD 25 a 50)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Objective SCORAD (without symptoms)",
+                "locale": "en",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "21.5 (moderate)",
+                "locale": "en",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  21.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extent (A/5)",
+                "locale": "en",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "4.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensity (7B/2)",
+                "locale": "en",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "17.5",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  17.5
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptoms (C)",
+                "locale": "en",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Moderate atopic dermatitis (SCORAD 25 to 50)",
+            "locale": "en",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Objective SCORAD (without symptoms)",
+                "locale": "en",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "9.0 (mild)",
+                "locale": "en",
+                "template": "documented-authored-ec7fb5a6799dca301f32",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extent (A/5)",
+                "locale": "en",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "2.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensity (7B/2)",
+                "locale": "en",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "7.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptoms (C)",
+                "locale": "en",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "2.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mild atopic dermatitis (SCORAD < 25)",
+            "locale": "en",
+            "template": "documented-authored-919d098f0041b679d39c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Objective SCORAD (without symptoms)",
+                "locale": "en",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "54.0 (severe)",
+                "locale": "en",
+                "template": "documented-authored-4da7ffc937148d4c7bda",
+                "sourceNumbers": [
+                  54
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extent (A/5)",
+                "locale": "en",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "12.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensity (7B/2)",
+                "locale": "en",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "42.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  42
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptoms (C)",
+                "locale": "en",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "15.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Severe atopic dermatitis (SCORAD > 50)",
+            "locale": "en",
+            "template": "documented-authored-81af8714f5ccbee2bbdf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Objective SCORAD (without symptoms)",
+                "locale": "en",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "19.0 (moderate)",
+                "locale": "en",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extent (A/5)",
+                "locale": "en",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "5.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensity (7B/2)",
+                "locale": "en",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "14.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptoms (C)",
+                "locale": "en",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6.0",
+                "locale": "en",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Moderate atopic dermatitis (SCORAD 25 to 50)",
+            "locale": "en",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objetivo (sin síntomas)",
+                "locale": "es",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "21,5 (moderada)",
+                "locale": "es",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  21.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extensión (A/5)",
+                "locale": "es",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "4,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensidad (7B/2)",
+                "locale": "es",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "17,5",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  17.5
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Síntomas (C)",
+                "locale": "es",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatitis atópica moderada (SCORAD 25 a 50)",
+            "locale": "es",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objetivo (sin síntomas)",
+                "locale": "es",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "9,0 (leve)",
+                "locale": "es",
+                "template": "documented-authored-ec7fb5a6799dca301f32",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extensión (A/5)",
+                "locale": "es",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "2,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensidad (7B/2)",
+                "locale": "es",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "7,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Síntomas (C)",
+                "locale": "es",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "2,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatitis atópica leve (SCORAD < 25)",
+            "locale": "es",
+            "template": "documented-authored-919d098f0041b679d39c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objetivo (sin síntomas)",
+                "locale": "es",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "54,0 (grave)",
+                "locale": "es",
+                "template": "documented-authored-4da7ffc937148d4c7bda",
+                "sourceNumbers": [
+                  54
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extensión (A/5)",
+                "locale": "es",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "12,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensidad (7B/2)",
+                "locale": "es",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "42,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  42
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Síntomas (C)",
+                "locale": "es",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "15,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatitis atópica grave (SCORAD > 50)",
+            "locale": "es",
+            "template": "documented-authored-81af8714f5ccbee2bbdf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objetivo (sin síntomas)",
+                "locale": "es",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "19,0 (moderada)",
+                "locale": "es",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extensión (A/5)",
+                "locale": "es",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "5,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensidad (7B/2)",
+                "locale": "es",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "14,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Síntomas (C)",
+                "locale": "es",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6,0",
+                "locale": "es",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatitis atópica moderada (SCORAD 25 a 50)",
+            "locale": "es",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objectif (sans symptômes)",
+                "locale": "fr",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "21,5 (modérée)",
+                "locale": "fr",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  21.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extension (A/5)",
+                "locale": "fr",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "4,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensité (7B/2)",
+                "locale": "fr",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "17,5",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  17.5
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptômes (C)",
+                "locale": "fr",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atopique modérée (SCORAD 25 à 50)",
+            "locale": "fr",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objectif (sans symptômes)",
+                "locale": "fr",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "9,0 (légère)",
+                "locale": "fr",
+                "template": "documented-authored-ec7fb5a6799dca301f32",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extension (A/5)",
+                "locale": "fr",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "2,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensité (7B/2)",
+                "locale": "fr",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "7,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptômes (C)",
+                "locale": "fr",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "2,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atopique légère (SCORAD < 25)",
+            "locale": "fr",
+            "template": "documented-authored-919d098f0041b679d39c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objectif (sans symptômes)",
+                "locale": "fr",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "54,0 (sévère)",
+                "locale": "fr",
+                "template": "documented-authored-4da7ffc937148d4c7bda",
+                "sourceNumbers": [
+                  54
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extension (A/5)",
+                "locale": "fr",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "12,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensité (7B/2)",
+                "locale": "fr",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "42,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  42
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptômes (C)",
+                "locale": "fr",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "15,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atopique sévère (SCORAD > 50)",
+            "locale": "fr",
+            "template": "documented-authored-81af8714f5ccbee2bbdf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD objectif (sans symptômes)",
+                "locale": "fr",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "19,0 (modérée)",
+                "locale": "fr",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Extension (A/5)",
+                "locale": "fr",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "5,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensité (7B/2)",
+                "locale": "fr",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "14,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptômes (C)",
+                "locale": "fr",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6,0",
+                "locale": "fr",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atopique modérée (SCORAD 25 à 50)",
+            "locale": "fr",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Objektiver SCORAD (ohne Symptome)",
+                "locale": "de",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "21,5 (mäßig)",
+                "locale": "de",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  21.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ausdehnung (A/5)",
+                "locale": "de",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "4,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensität (7B/2)",
+                "locale": "de",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "17,5",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  17.5
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptome (C)",
+                "locale": "de",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mittelgradige atopische Dermatitis (SCORAD 25 bis 50)",
+            "locale": "de",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Objektiver SCORAD (ohne Symptome)",
+                "locale": "de",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "9,0 (leicht)",
+                "locale": "de",
+                "template": "documented-authored-ec7fb5a6799dca301f32",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ausdehnung (A/5)",
+                "locale": "de",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "2,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensität (7B/2)",
+                "locale": "de",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "7,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptome (C)",
+                "locale": "de",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "2,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Leichte atopische Dermatitis (SCORAD < 25)",
+            "locale": "de",
+            "template": "documented-authored-919d098f0041b679d39c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Objektiver SCORAD (ohne Symptome)",
+                "locale": "de",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "54,0 (schwer)",
+                "locale": "de",
+                "template": "documented-authored-4da7ffc937148d4c7bda",
+                "sourceNumbers": [
+                  54
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ausdehnung (A/5)",
+                "locale": "de",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "12,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensität (7B/2)",
+                "locale": "de",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "42,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  42
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptome (C)",
+                "locale": "de",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "15,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Schwere atopische Dermatitis (SCORAD > 50)",
+            "locale": "de",
+            "template": "documented-authored-81af8714f5ccbee2bbdf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Objektiver SCORAD (ohne Symptome)",
+                "locale": "de",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "19,0 (mäßig)",
+                "locale": "de",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ausdehnung (A/5)",
+                "locale": "de",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "5,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensität (7B/2)",
+                "locale": "de",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "14,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Symptome (C)",
+                "locale": "de",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6,0",
+                "locale": "de",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mittelgradige atopische Dermatitis (SCORAD 25 bis 50)",
+            "locale": "de",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD obiettivo (senza sintomi)",
+                "locale": "it",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "21,5 (moderata)",
+                "locale": "it",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  21.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Estensione (A/5)",
+                "locale": "it",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "4,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensità (7B/2)",
+                "locale": "it",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "17,5",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  17.5
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sintomi (C)",
+                "locale": "it",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atopica moderata (SCORAD 25 a 50)",
+            "locale": "it",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD obiettivo (senza sintomi)",
+                "locale": "it",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "9,0 (lieve)",
+                "locale": "it",
+                "template": "documented-authored-ec7fb5a6799dca301f32",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Estensione (A/5)",
+                "locale": "it",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "2,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensità (7B/2)",
+                "locale": "it",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "7,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sintomi (C)",
+                "locale": "it",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "2,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atopica lieve (SCORAD < 25)",
+            "locale": "it",
+            "template": "documented-authored-919d098f0041b679d39c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD obiettivo (senza sintomi)",
+                "locale": "it",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "54,0 (grave)",
+                "locale": "it",
+                "template": "documented-authored-4da7ffc937148d4c7bda",
+                "sourceNumbers": [
+                  54
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Estensione (A/5)",
+                "locale": "it",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "12,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensità (7B/2)",
+                "locale": "it",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "42,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  42
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sintomi (C)",
+                "locale": "it",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "15,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atopica grave (SCORAD > 50)",
+            "locale": "it",
+            "template": "documented-authored-81af8714f5ccbee2bbdf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD obiettivo (senza sintomi)",
+                "locale": "it",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "19,0 (moderata)",
+                "locale": "it",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Estensione (A/5)",
+                "locale": "it",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "5,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Intensità (7B/2)",
+                "locale": "it",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "14,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Sintomi (C)",
+                "locale": "it",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6,0",
+                "locale": "it",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Dermatite atopica moderata (SCORAD 25 a 50)",
+            "locale": "it",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD الموضوعي (من دون أعراض)",
+                "locale": "ar",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "٢١٫٥ (متوسطة)",
+                "locale": "ar",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  21.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الامتداد (A/5)",
+                "locale": "ar",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "٤٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الشدة (7B/2)",
+                "locale": "ar",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "١٧٫٥",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  17.5
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "الأعراض (C)",
+                "locale": "ar",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "٦٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب الجلد التأتبي المتوسط (SCORAD 25 إلى 50)",
+            "locale": "ar",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD الموضوعي (من دون أعراض)",
+                "locale": "ar",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "٩٫٠ (خفيف)",
+                "locale": "ar",
+                "template": "documented-authored-ec7fb5a6799dca301f32",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الامتداد (A/5)",
+                "locale": "ar",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "٢٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الشدة (7B/2)",
+                "locale": "ar",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "٧٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "الأعراض (C)",
+                "locale": "ar",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "٢٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب الجلد التأتبي الخفيف (SCORAD < 25)",
+            "locale": "ar",
+            "template": "documented-authored-919d098f0041b679d39c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD الموضوعي (من دون أعراض)",
+                "locale": "ar",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "٥٤٫٠ (شديد)",
+                "locale": "ar",
+                "template": "documented-authored-4da7ffc937148d4c7bda",
+                "sourceNumbers": [
+                  54
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الامتداد (A/5)",
+                "locale": "ar",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "١٢٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الشدة (7B/2)",
+                "locale": "ar",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "٤٢٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  42
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "الأعراض (C)",
+                "locale": "ar",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "١٥٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب الجلد التأتبي الشديد (SCORAD > 50)",
+            "locale": "ar",
+            "template": "documented-authored-81af8714f5ccbee2bbdf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "SCORAD الموضوعي (من دون أعراض)",
+                "locale": "ar",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "١٩٫٠ (متوسطة)",
+                "locale": "ar",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الامتداد (A/5)",
+                "locale": "ar",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "٥٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الشدة (7B/2)",
+                "locale": "ar",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "١٤٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "الأعراض (C)",
+                "locale": "ar",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "٦٫٠",
+                "locale": "ar",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "التهاب الجلد التأتبي المتوسط (SCORAD 25 إلى 50)",
+            "locale": "ar",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "客观 SCORAD（无症状）",
+                "locale": "zh",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "21.5（中度）",
+                "locale": "zh",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  21.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "范围 (A/5)",
+                "locale": "zh",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "4.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "强度 (7B/2)",
+                "locale": "zh",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "17.5",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  17.5
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "症状 (C)",
+                "locale": "zh",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中度特应性皮炎（SCORAD 25 至 50）",
+            "locale": "zh",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "客观 SCORAD（无症状）",
+                "locale": "zh",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "9.0（轻度）",
+                "locale": "zh",
+                "template": "documented-authored-ec7fb5a6799dca301f32",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "范围 (A/5)",
+                "locale": "zh",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "2.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "强度 (7B/2)",
+                "locale": "zh",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "7.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "症状 (C)",
+                "locale": "zh",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "2.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "轻度特应性皮炎（SCORAD < 25）",
+            "locale": "zh",
+            "template": "documented-authored-919d098f0041b679d39c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "客观 SCORAD（无症状）",
+                "locale": "zh",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "54.0（重度）",
+                "locale": "zh",
+                "template": "documented-authored-4da7ffc937148d4c7bda",
+                "sourceNumbers": [
+                  54
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "范围 (A/5)",
+                "locale": "zh",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "12.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "强度 (7B/2)",
+                "locale": "zh",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "42.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  42
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "症状 (C)",
+                "locale": "zh",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "15.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "重度特应性皮炎（SCORAD > 50）",
+            "locale": "zh",
+            "template": "documented-authored-81af8714f5ccbee2bbdf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "客观 SCORAD（无症状）",
+                "locale": "zh",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "19.0（中度）",
+                "locale": "zh",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "范围 (A/5)",
+                "locale": "zh",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "5.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "强度 (7B/2)",
+                "locale": "zh",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "14.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "症状 (C)",
+                "locale": "zh",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6.0",
+                "locale": "zh",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中度特应性皮炎（SCORAD 25 至 50）",
+            "locale": "zh",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "客観的SCORAD（症状なし）",
+                "locale": "ja",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "21.5（中等度）",
+                "locale": "ja",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  21.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "範囲 (A/5)",
+                "locale": "ja",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "4.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "強度 (7B/2)",
+                "locale": "ja",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "17.5",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  17.5
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "症状 (C)",
+                "locale": "ja",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等度アトピー性皮膚炎（SCORAD 25～50）",
+            "locale": "ja",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "客観的SCORAD（症状なし）",
+                "locale": "ja",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "9.0（軽度）",
+                "locale": "ja",
+                "template": "documented-authored-ec7fb5a6799dca301f32",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "範囲 (A/5)",
+                "locale": "ja",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "2.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "強度 (7B/2)",
+                "locale": "ja",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "7.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "症状 (C)",
+                "locale": "ja",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "2.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "軽度のアトピー性皮膚炎（SCORAD < 25）",
+            "locale": "ja",
+            "template": "documented-authored-919d098f0041b679d39c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "客観的SCORAD（症状なし）",
+                "locale": "ja",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "54.0（重度）",
+                "locale": "ja",
+                "template": "documented-authored-4da7ffc937148d4c7bda",
+                "sourceNumbers": [
+                  54
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "範囲 (A/5)",
+                "locale": "ja",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "12.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "強度 (7B/2)",
+                "locale": "ja",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "42.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  42
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "症状 (C)",
+                "locale": "ja",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "15.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "重度のアトピー性皮膚炎（SCORAD > 50）",
+            "locale": "ja",
+            "template": "documented-authored-81af8714f5ccbee2bbdf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "客観的SCORAD（症状なし）",
+                "locale": "ja",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "19.0（中等度）",
+                "locale": "ja",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "範囲 (A/5)",
+                "locale": "ja",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "5.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "強度 (7B/2)",
+                "locale": "ja",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "14.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "症状 (C)",
+                "locale": "ja",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6.0",
+                "locale": "ja",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等度アトピー性皮膚炎（SCORAD 25～50）",
+            "locale": "ja",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ऑब्जेक्टिव SCORAD (लक्षणों के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "21.5 (मध्यम)",
+                "locale": "hi",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  21.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "व्याप्ति (A/5)",
+                "locale": "hi",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "4.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "तीव्रता (7B/2)",
+                "locale": "hi",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "17.5",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  17.5
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "लक्षण (C)",
+                "locale": "hi",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम एटॉपिक डर्मेटाइटिस (SCORAD 25 से 50)",
+            "locale": "hi",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ऑब्जेक्टिव SCORAD (लक्षणों के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "9.0 (हल्का)",
+                "locale": "hi",
+                "template": "documented-authored-ec7fb5a6799dca301f32",
+                "sourceNumbers": [
+                  9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "व्याप्ति (A/5)",
+                "locale": "hi",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "2.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "तीव्रता (7B/2)",
+                "locale": "hi",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "7.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "लक्षण (C)",
+                "locale": "hi",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "2.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "हल्का एटोपिक डर्मेटाइटिस (SCORAD < 25)",
+            "locale": "hi",
+            "template": "documented-authored-919d098f0041b679d39c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ऑब्जेक्टिव SCORAD (लक्षणों के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "54.0 (गंभीर)",
+                "locale": "hi",
+                "template": "documented-authored-4da7ffc937148d4c7bda",
+                "sourceNumbers": [
+                  54
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "व्याप्ति (A/5)",
+                "locale": "hi",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "12.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  12
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "तीव्रता (7B/2)",
+                "locale": "hi",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "42.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  42
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "लक्षण (C)",
+                "locale": "hi",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "15.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  15
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "गंभीर एटोपिक डर्मेटाइटिस (SCORAD > 50)",
+            "locale": "hi",
+            "template": "documented-authored-81af8714f5ccbee2bbdf"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ऑब्जेक्टिव SCORAD (लक्षणों के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-2cdc2f0e0f36b7cdd79f"
+              },
+              "value": {
+                "text": "19.0 (मध्यम)",
+                "locale": "hi",
+                "template": "documented-authored-ba33854bd0edeff4efca",
+                "sourceNumbers": [
+                  19
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "व्याप्ति (A/5)",
+                "locale": "hi",
+                "template": "documented-authored-3d5d275080121d9bab0f"
+              },
+              "value": {
+                "text": "5.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "तीव्रता (7B/2)",
+                "locale": "hi",
+                "template": "documented-authored-aef448663ecf4a53cd04"
+              },
+              "value": {
+                "text": "14.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  14
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "लक्षण (C)",
+                "locale": "hi",
+                "template": "documented-authored-0834004863f6d1112c48"
+              },
+              "value": {
+                "text": "6.0",
+                "locale": "hi",
+                "template": "documented-authored-30f51e36001844c98b3c",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम एटॉपिक डर्मेटाइटिस (SCORAD 25 से 50)",
+            "locale": "hi",
+            "template": "documented-authored-4be8776305f46e4af963"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}

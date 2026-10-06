@@ -1,0 +1,339 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "scorad",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "705310cd347e53e0a643ff3fbf90fc3748db5aaf",
+    "oldEngineSha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84",
+    "currentEngineSha256": "102b2ba5ebc28ed9742f506872282cf02786c6bfa4c69b25e774c80f172036ed"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "A 20%, B 5, C 6: 4 + 17,5 + 6 = 27,5 (moderada); objetivo 21,5",
+      "input": {
+        "area": 20,
+        "eritema": "1",
+        "edema": "1",
+        "exsudacao": "0",
+        "escoriacao": "1",
+        "liquen": "1",
+        "xerose": "1",
+        "prurido": 4,
+        "sono": 2
+      },
+      "publicOutput": {
+        "id": "scorad",
+        "main": [
+          "27,5",
+          "de 103"
+        ],
+        "label": "SCORAD",
+        "raw": {
+          "scorad": 27.5,
+          "objetivo": 21.5,
+          "b": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "scorad": 27.5,
+          "objetivo": 21.5,
+          "b": 5
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "27,5",
+          "de 103"
+        ],
+        "label": "SCORAD",
+        "level": "mid",
+        "verdict": "Dermatite atópica moderada (SCORAD 25 a 50)",
+        "rows": [
+          [
+            "SCORAD objetivo (sem sintomas)",
+            "21,5 (moderada)"
+          ],
+          [
+            "Extensão (A/5)",
+            "4,0"
+          ],
+          [
+            "Intensidade (7B/2)",
+            "17,5"
+          ],
+          [
+            "Sintomas (C)",
+            "6,0"
+          ]
+        ],
+        "raw": {
+          "scorad": 27.5,
+          "objetivo": 21.5,
+          "b": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "A 10%, B 2, C 2: 2 + 7 + 2 = 11 (leve)",
+      "input": {
+        "area": 10,
+        "eritema": "1",
+        "edema": "0",
+        "exsudacao": "0",
+        "escoriacao": "0",
+        "liquen": "0",
+        "xerose": "1",
+        "prurido": 2,
+        "sono": 0
+      },
+      "publicOutput": {
+        "id": "scorad",
+        "main": [
+          "11,0",
+          "de 103"
+        ],
+        "label": "SCORAD",
+        "raw": {
+          "scorad": 11,
+          "objetivo": 9,
+          "b": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "scorad": 11
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "11,0",
+          "de 103"
+        ],
+        "label": "SCORAD",
+        "level": "low",
+        "verdict": "Dermatite atópica leve (SCORAD &lt; 25)",
+        "rows": [
+          [
+            "SCORAD objetivo (sem sintomas)",
+            "9,0 (leve)"
+          ],
+          [
+            "Extensão (A/5)",
+            "2,0"
+          ],
+          [
+            "Intensidade (7B/2)",
+            "7,0"
+          ],
+          [
+            "Sintomas (C)",
+            "2,0"
+          ]
+        ],
+        "raw": {
+          "scorad": 11,
+          "objetivo": 9,
+          "b": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "A 60%, B 12, C 15: 12 + 42 + 15 = 69 (grave)",
+      "input": {
+        "area": 60,
+        "eritema": "2",
+        "edema": "2",
+        "exsudacao": "2",
+        "escoriacao": "2",
+        "liquen": "2",
+        "xerose": "2",
+        "prurido": 8,
+        "sono": 7
+      },
+      "publicOutput": {
+        "id": "scorad",
+        "main": [
+          "69,0",
+          "de 103"
+        ],
+        "label": "SCORAD",
+        "raw": {
+          "scorad": 69,
+          "objetivo": 54,
+          "b": 12
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "scorad": 69,
+          "objetivo": 54
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "69,0",
+          "de 103"
+        ],
+        "label": "SCORAD",
+        "level": "high",
+        "verdict": "Dermatite atópica grave (SCORAD &gt; 50)",
+        "rows": [
+          [
+            "SCORAD objetivo (sem sintomas)",
+            "54,0 (grave)"
+          ],
+          [
+            "Extensão (A/5)",
+            "12,0"
+          ],
+          [
+            "Intensidade (7B/2)",
+            "42,0"
+          ],
+          [
+            "Sintomas (C)",
+            "15,0"
+          ]
+        ],
+        "raw": {
+          "scorad": 69,
+          "objetivo": 54,
+          "b": 12
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Limite: A 25%, B 4, C 6: 5 + 14 + 6 = 25 (moderada)",
+      "input": {
+        "area": 25,
+        "eritema": "1",
+        "edema": "1",
+        "exsudacao": "0",
+        "escoriacao": "1",
+        "liquen": "0",
+        "xerose": "1",
+        "prurido": 4,
+        "sono": 2
+      },
+      "publicOutput": {
+        "id": "scorad",
+        "main": [
+          "25,0",
+          "de 103"
+        ],
+        "label": "SCORAD",
+        "raw": {
+          "scorad": 25,
+          "objetivo": 19,
+          "b": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "scorad": 25
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "25,0",
+          "de 103"
+        ],
+        "label": "SCORAD",
+        "level": "mid",
+        "verdict": "Dermatite atópica moderada (SCORAD 25 a 50)",
+        "rows": [
+          [
+            "SCORAD objetivo (sem sintomas)",
+            "19,0 (moderada)"
+          ],
+          [
+            "Extensão (A/5)",
+            "5,0"
+          ],
+          [
+            "Intensidade (7B/2)",
+            "14,0"
+          ],
+          [
+            "Sintomas (C)",
+            "6,0"
+          ]
+        ],
+        "raw": {
+          "scorad": 25,
+          "objetivo": 19,
+          "b": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

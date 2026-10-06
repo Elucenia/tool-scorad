@@ -129,3 +129,55 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Moderate atopic dermatitis (SCORAD 25 to 50)
+
+| Result details | |
+| --- | --- |
+| Objective SCORAD (without symptoms) | 21.5 (moderate) |
+| Extent (A/5) | 4.0 |
+| Intensity (7B/2) | 17.5 |
+| Symptoms (C) | 6.0 |
+
+
+### 2
+
+Mild atopic dermatitis (SCORAD < 25)
+
+| Result details | |
+| --- | --- |
+| Objective SCORAD (without symptoms) | 9.0 (mild) |
+| Extent (A/5) | 2.0 |
+| Intensity (7B/2) | 7.0 |
+| Symptoms (C) | 2.0 |
+
+
+### 3
+
+Severe atopic dermatitis (SCORAD > 50)
+
+| Result details | |
+| --- | --- |
+| Objective SCORAD (without symptoms) | 54.0 (severe) |
+| Extent (A/5) | 12.0 |
+| Intensity (7B/2) | 42.0 |
+| Symptoms (C) | 15.0 |
+
+
+### 4
+
+Moderate atopic dermatitis (SCORAD 25 to 50)
+
+| Result details | |
+| --- | --- |
+| Objective SCORAD (without symptoms) | 19.0 (moderate) |
+| Extent (A/5) | 5.0 |
+| Intensity (7B/2) | 14.0 |
+| Symptoms (C) | 6.0 |
+

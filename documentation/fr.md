@@ -129,3 +129,55 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Dermatite atopique modérée (SCORAD 25 à 50)
+
+| Détails du résultat | |
+| --- | --- |
+| SCORAD objectif (sans symptômes) | 21,5 (modérée) |
+| Extension (A/5) | 4,0 |
+| Intensité (7B/2) | 17,5 |
+| Symptômes (C) | 6,0 |
+
+
+### 2
+
+Dermatite atopique légère (SCORAD < 25)
+
+| Détails du résultat | |
+| --- | --- |
+| SCORAD objectif (sans symptômes) | 9,0 (légère) |
+| Extension (A/5) | 2,0 |
+| Intensité (7B/2) | 7,0 |
+| Symptômes (C) | 2,0 |
+
+
+### 3
+
+Dermatite atopique sévère (SCORAD > 50)
+
+| Détails du résultat | |
+| --- | --- |
+| SCORAD objectif (sans symptômes) | 54,0 (sévère) |
+| Extension (A/5) | 12,0 |
+| Intensité (7B/2) | 42,0 |
+| Symptômes (C) | 15,0 |
+
+
+### 4
+
+Dermatite atopique modérée (SCORAD 25 à 50)
+
+| Détails du résultat | |
+| --- | --- |
+| SCORAD objectif (sans symptômes) | 19,0 (modérée) |
+| Extension (A/5) | 5,0 |
+| Intensité (7B/2) | 14,0 |
+| Symptômes (C) | 6,0 |
+

@@ -384,7 +384,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "SCORAD/ETFAD 1993:extensão/5+3,5 intensidade+sintomas; objective SCORADsem C; limiares Oranje 2007",
-    "implementationVersion": "scorad@native-2026-10-03+0f7d89484000",
+    "implementationVersion": "scorad@native-2026-10-05+102b2ba5ebc2",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/8435513/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -720,7 +720,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+      "implementationHash": "102b2ba5ebc28ed9742f506872282cf02786c6bfa4c69b25e774c80f172036ed",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "scorad@native-2026-10-03+0f7d89484000",
+          "previousImplementationHash": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84",
+          "implementationHash": "102b2ba5ebc28ed9742f506872282cf02786c6bfa4c69b25e774c80f172036ed",
+          "scientificBodySha256": "b243af3ec6f1fc517540639eb8cbdf15769af7d5a19d063651e20b430de4a170",
+          "metadataContractHash": "aa73c2559fbbf75457242b4e10f0e6cf9de09b65ab6a9a7dd2e85f08f0a97850",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "SCORAD mede gravidade de dermatite atópica e depende da avaliação dos sinais, extensão e sintomas subjetivos. O desenvolvimento original incluiu avaliadores treinados e não estabelece diagnóstico da doença pelo total. SCORAD objetivo, índice completo e cortes posteriores exigem suas próprias definições e fontes.",
     "sourceLimitEvidence": {
@@ -739,20 +767,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/scorad/calculator.js",
-    "bytes": 5794,
-    "sha256": "0f7d89484000636c39e3e7f10fd2c7cbbc869b17054ba9496bb40ae420469f84"
+    "bytes": 5999,
+    "sha256": "102b2ba5ebc28ed9742f506872282cf02786c6bfa4c69b25e774c80f172036ed"
   },
-  "sourceToolSha256": "3d3175f551ab29e8ed93080bad39ab4395b47f1dccb581288636268e6231c611",
+  "sourceToolSha256": "6d5c287c429918ec594e38525d3c2a92a5707d042615c1ed0684b621f0d01454",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "6aa610e312067aab79a586bcd9a428cb868062c0b405f5d6660ace1c47fad568",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "6aa610e312067aab79a586bcd9a428cb868062c0b405f5d6660ace1c47fad568",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",
